@@ -4,6 +4,14 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
 .clearfix:after {
   display: block;
   content: "";
@@ -46,10 +54,14 @@ body {
   float: right;
 }
 
+.main__tab{
+  padding-top: 71px;
+}
+
 /*  BOLT THEME  */
 .bolt__main {
   background-color: #f2f2f2;
-  padding: 321px 0 250px 0;
+  padding: 250px 0;
 }
 
 .text__bolt {
@@ -111,19 +123,30 @@ body {
 
 .display {
   font-size: 0;
+  margin-bottom: 90px;
 }
 
 .design {
   display: inline-block;
   opacity: 0.7;
   transition: .3s;
+  margin-left: 100px;
+  margin-top: 80px;
 }
 
 .design:hover {
   opacity: 1.0;
 }
 
-.design:nth-child(-n+2) {
+.design:nth-child(3n+1) {
+  margin-left: 0;
+}
+
+.design:nth-child(-n+3) {
+  margin-top: 0;
+}
+
+/* .design:nth-child(-n+2) {
   margin: 0 100px 80px 0;
 }
 
@@ -141,7 +164,7 @@ body {
 
 .design:nth-child(6) {
   margin-bottom: 90px;
-}
+} */
 
 .text__our__lorem {
   float: left;
@@ -169,6 +192,7 @@ body {
 .skills__main {
   background-color: #4e4e4e;
   padding: 70px 0 100px 0;
+  text-align: center;
 }
 
 .text__skills {
@@ -181,7 +205,7 @@ body {
 
 .image {
   font-size: 0px;
-  padding-left: 36px;
+  display: inline-block;
 }
 
 .circle {
@@ -203,13 +227,13 @@ body {
 .icon__main {
   background-color: #f2f2f2;
   text-align: center;
-  padding: 200px 0 200px 0;
+  padding: 200px 0;
   font-size: 0;
 }
 
 .box {
   width: 185px;
-  padding: 20px 0 20px 0;
+  padding: 20px 0;
 }
 
 .icon {
@@ -235,7 +259,7 @@ body {
 .text__crafted {
   text-align: right;
   color: #fff;
-  padding: 20px 0 25px 0;
+  padding: 20px 0;
 }
 
 .footer__font {
